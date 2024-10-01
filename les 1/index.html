@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id = "dom">ClickMe</button>
+    <script>
+        let clicked = false;
+        const btn = document.getElementById("dom");
+        btn.addEventListener("click",function()
+        {
+            if (!clicked)
+        {
+            document.body.style.background = "#4ae46d";
+            clicked = true
+        }
+        else
+        {
+            document.body.style.background = "#000000";
+            clicked = false
+        }
+        }
+    )
+    </script>
+</body>
+</html>
