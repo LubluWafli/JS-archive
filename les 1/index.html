@@ -7,24 +7,33 @@
 </head>
 <body>
     <button id = "dom">ClickMe</button>
+    <button id = "dom2">ClickMe</button>
     <script>
         let clicked = false;
         const btn = document.getElementById("dom");
+        const btn2 = document.getElementById("dom2");
+        btn2.style.color = "black";
+        btn2.style.fontSize = "0.85em";
+        btn2.style.borderRadius = "0px"
         btn.addEventListener("click",function()
         {
             if (!clicked)
         {
-            document.body.style.background = "#4ae46d";
+            btn2.style.color = "green";
+            btn2.style.fontSize = "1.4em";
+            btn2.style.borderRadius = "50%"
             clicked = true
         }
         else
         {
-            document.body.style.background = "#000001";
+            btn2.style.color = "black";
+            btn2.style.fontSize = "0.85em";
+            btn2.style.borderRadius = "0px"
             clicked = false
         }
         }
-
     )
+    
     </script>
 </body>
 </html>
