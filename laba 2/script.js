@@ -1,3 +1,5 @@
+function colorAndCount()
+{
 let markArray = [0, 0, 0, 0];
 
     const table = document.querySelector(".table");
@@ -29,3 +31,4 @@ document.getElementById('Five').textContent = markArray[0]
 document.getElementById('Four').textContent = markArray[1]
 document.getElementById('Three').textContent = markArray[2]
 document.getElementById('Two').textContent = markArray[3]
+}
